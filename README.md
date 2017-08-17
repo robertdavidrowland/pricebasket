@@ -20,27 +20,34 @@ Input is via the command line in the form PriceBasket item1 item2 item3 …
 
 For example: 
 
+```
 > PriceBasket Apples Milk Bread 
+```
 
 Output should be to the console, for example: 
 
-> Subtotal: £3.10 
-> Apples 10% off: -10p 
-> Total: £3.00 
+```
+Subtotal: £3.10 
+Apples 10% off: -10p 
+Total: £3.00 
+```
 
 If no special offers are applicable the code should output: 
 
-> Subtotal: £1.30 
-> (No offers available) 
-> Total: £1.30 
+```
+Subtotal: £1.30 
+(No offers available) 
+Total: £1.30 
+```
 
 ## Example
 
->>mvn package
->
->>java -jar target\priceBasket-0.0.1-SNAPSHOT.jar Apples Bread Bread Soup Soup
->Subtotal: 3.90
->Apples 10% off: -10p
->Bread 50% off: -40p
->Total: 3.40
+```
+> mvn package
+> java -jar target\priceBasket-0.0.1-SNAPSHOT.jar Apples Bread Bread Soup Soup
+Subtotal: 3.90
+Apples 10% off: -10p
+Bread 50% off: -40p
+Total: 3.40
+```
 
