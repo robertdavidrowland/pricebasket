@@ -38,7 +38,6 @@ public class PriceBasketApplication implements CommandLineRunner {
     
 	@Override
 	public void run(String... args) {
-
 		// setup our basket of items, exit with an message if any items are invalid
 		Basket basket = new Basket();
 		try {
@@ -69,9 +68,16 @@ public class PriceBasketApplication implements CommandLineRunner {
 		List<Item> discountedItems = priceBasketService.getDiscountedProducts(basket);
 		
 		PriceBasketApplication.output(String.format("Subtotal: %d.%d", subTotal / 100, subTotal % 100));
-		for (Item discountedItem : discountedItems) {
-			PriceBasketApplication.output(String.format("%s %d%% off: -%dp", discountedItem.getProduct().getName(), discountedItem.getDiscountPercentage(), discountedItem.getDiscountValue()));
+		
+		if (discountedItems.size() == 0) {
+			PriceBasketApplication.output("(No offers available)");			
 		}
+		else {
+			for (Item discountedItem : discountedItems) {
+				PriceBasketApplication.output(String.format("%s %d%% off: -%dp", discountedItem.getProduct().getName(), discountedItem.getDiscountPercentage(), discountedItem.getDiscountValue()));
+			}
+		}
+		
 		PriceBasketApplication.output(String.format("Total: %d.%d", discountedTotal / 100, discountedTotal % 100));
 	}
 	
