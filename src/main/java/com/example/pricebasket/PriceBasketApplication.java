@@ -67,7 +67,7 @@ public class PriceBasketApplication implements CommandLineRunner {
 		int discountedTotal = priceBasketService.calculateDiscountedTotal(basket);
 		List<Item> discountedItems = priceBasketService.getDiscountedProducts(basket);
 		
-		PriceBasketApplication.output(String.format("Subtotal: %d.%d", subTotal / 100, subTotal % 100));
+		PriceBasketApplication.output(String.format("Subtotal: £%d.%d", subTotal / 100, subTotal % 100));
 		
 		if (discountedItems.size() == 0) {
 			PriceBasketApplication.output("(No offers available)");			
@@ -78,7 +78,7 @@ public class PriceBasketApplication implements CommandLineRunner {
 			}
 		}
 		
-		PriceBasketApplication.output(String.format("Total: %d.%d", discountedTotal / 100, discountedTotal % 100));
+		PriceBasketApplication.output(String.format("Total: £%d.%d", discountedTotal / 100, discountedTotal % 100));
 	}
 	
 	private static void output (String output) {
