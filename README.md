@@ -2,7 +2,7 @@
 
 ## Overview
 
-Write a program and associated unit tests that can price a basket of goods taking into account some special offers. 
+A program and associated unit tests that can price a basket of goods taking into account some special offers. 
 
 The goods that can be purchased, together with their normal prices are: 
 
