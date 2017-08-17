@@ -1,0 +1,11 @@
+2017-08-17 11:10:43 INFO  c.e.p.PriceBasketApplication - Starting PriceBasketApplication v0.0.1-SNAPSHOT on rowlro-PC with PID 12720 (D:\Dev\price-basket\target\priceBasket-0.0.1-SNAPSHOT.jar started by rowlro in D:\Dev\price-basket)
+2017-08-17 11:10:43 DEBUG c.e.p.PriceBasketApplication - Running with Spring Boot v1.5.6.RELEASE, Spring v4.3.10.RELEASE
+2017-08-17 11:10:43 INFO  c.e.p.PriceBasketApplication - No active profile set, falling back to default profiles: default
+2017-08-17 11:10:44 DEBUG c.example.pricebasket.model.Product - get discount in pence (100 * 10) / 100 = 10
+2017-08-17 11:10:44 DEBUG c.example.pricebasket.model.Product - apply discount 100 - ((100 * Optional[com.example.pricebasket.model.Discount@6aaa5eb0]) / 100 = 90
+2017-08-17 11:10:44 DEBUG c.example.pricebasket.model.Product - get discount in pence (100 * 10) / 100 = 10
+2017-08-17 11:10:44 DEBUG c.e.p.PriceBasketApplication - Subtotal: 3.25
+2017-08-17 11:10:44 DEBUG c.example.pricebasket.model.Product - get discount in pence (100 * 10) / 100 = 10
+2017-08-17 11:10:44 DEBUG c.e.p.PriceBasketApplication - Apples 10% off: -10p
+2017-08-17 11:10:44 DEBUG c.e.p.PriceBasketApplication - Total: 3.15
+2017-08-17 11:10:44 INFO  c.e.p.PriceBasketApplication - Started PriceBasketApplication in 1.445 seconds (JVM running for 2.219)
