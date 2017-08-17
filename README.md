@@ -1,5 +1,7 @@
 # Pricing a basket 
 
+## Overview
+
 Write a program and associated unit tests that can price a basket of goods taking into account some special offers. 
 
 The goods that can be purchased, together with their normal prices are: 
@@ -39,6 +41,10 @@ Subtotal: £1.30
 (No offers available) 
 Total: £1.30 
 ```
+
+## Implementation details
+
+This has been set up as Spring Boot project using Java 8 features.  The application is built with Maven.
 
 ## Example
 
