@@ -15,11 +15,6 @@ import com.example.pricebasket.model.Product;
 public class ApplesWeeklyDiscountRule implements DiscountRule {
 
 	public void applyRuleToBasket (Basket basket) {
-		
-		List<Item> applesItems = basket.getItems()
-			.stream()
-			.filter(i -> i.getProduct() == Product.APPLES)
-			.collect(Collectors.toList());
 
 		List<Item> updatedItems = basket.getItems()
 			.stream()

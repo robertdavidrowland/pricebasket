@@ -76,7 +76,6 @@ public class Item {
 	
 	private int applyDiscount(int price, Optional<Discount> discount) {
 		int p = price;
-		int d = discount.get().getDiscountPercentage();
 		
 		LOG.debug("apply discount {} - (({} * {}) / 100 = {}", p, p, discount, p - getDiscountInPence(price, discount));
 		return p - getDiscountInPence(price, discount);

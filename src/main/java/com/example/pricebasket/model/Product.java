@@ -3,9 +3,6 @@ package com.example.pricebasket.model;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import com.example.pricebasket.exception.ProductNotFoundException;
 
 public enum Product {
@@ -15,8 +12,6 @@ public enum Product {
 	MILK("Milk", 130),
 	APPLES("Apples", 100);
 	
-	private static final Logger LOG = LoggerFactory.getLogger(Product.class);
-
     private static final Map<String, Product> lookup = new HashMap<>();
 
     static {
